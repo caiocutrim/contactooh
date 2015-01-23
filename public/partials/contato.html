@@ -1,0 +1,22 @@
+<section ng-controller="ContatoController">
+	<h1 class="text-center">Contato</h1>
+	<p ng-show="mensagem.texto">
+		{{mensagem.texto}}
+	</p>
+	<form role="form" ng-submit="salva()">
+		<legend>Dados do contato</legend>
+	
+		<div class="form-group">
+			<label for="nome">Nome completo</label>
+			<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome completo" ng-model="contato.nome">
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="text" class="form-control" name="email" id="email" placeholder="Insira seu email corretamente" ng-model="contato.email">
+		</div>
+		<div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+			<a href="#/" class="btn btn-default">Voltar</a>
+		</div>
+	</form>
+</section>

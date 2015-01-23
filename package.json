@@ -1,0 +1,30 @@
+{
+  "name": "contatooh",
+  "version": "1.0.0",
+  "description": "A contact list with nodejs, angular and mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Caio Cutrim",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^0.8.8",
+    "express": "^4.8.8",
+    "express-load": "^1.1.14",
+    "grunt": "^0.4.5",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-nodemon": "^0.3.0",
+    "kouto-swiss": "^0.11.6",
+    "less": "^2.2.0",
+    "stylus": "^0.49.3"
+  },
+  "devDependencies": {
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "less-monitor": "^0.2.0",
+    "load-grunt-tasks": "^2.0.0"
+  }
+}
