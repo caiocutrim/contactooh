@@ -1,3 +1,9 @@
+/**
+ * Controller responsável pelas acões do contato
+ * onde o usuário terá acesso aos contatos referentes a sua
+ * conta e inteiramente responsável pelos seus dados
+ * @return {[response]}
+ */
 angular.module('contatooh').controller('ContatosController',
 	function(Contato,$scope){
 		$scope.contatos = [];
@@ -12,7 +18,6 @@ angular.module('contatooh').controller('ContatosController',
 		// expresss utilizando os requisitos do tipo REST.
 		// tal funcao eh relevantemente alimentada pelos REST-ends
 		var Contato = Contato;
-
 		// funcao responsavel por buscar os dados
 		var buscaContatos = function (){
 			Contato.query(
