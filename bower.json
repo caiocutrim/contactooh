@@ -1,25 +1,25 @@
 {
-  "name": "contatooh",
-  "version": "0.0.0",
-  "authors": [
-    "Caio Cutrim <kaiocoutrim@gmail.com>"
-  ],
-  "description": "front-end dependencies of the open-source project",
-  "license": "MIT",
-  "private": true,
-  "homepage": "http://caiocutrim.com.br",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "angular": "*",
-    "normalize-stylus": "*",
-    "angular-route": "*",
-    "bootstrap": "*",
-    "angular-resource": "1.3"
-  }
+	"name": "contatooh",
+	"version": "0.0.0",
+	"authors": [
+		"Caio Cutrim <kaiocoutrim@gmail.com>"
+	],
+	"description": "front-end dependencies of the open-source project",
+	"license": "MIT",
+	"private": true,
+	"homepage": "http://caiocutrim.com.br",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"angular": "*",
+		"normalize-stylus": "*",
+		"angular-route": "*",
+		"bootstrap": "*",
+		"angular-resource": "1.3"
+	}
 }
