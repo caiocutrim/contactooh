@@ -21,6 +21,7 @@
     "grunt-nodemon": "^0.3.0",
     "less": "^2.2.0",
     "load-grunt-tasks": "^2.0.0",
-    "mongodb": "^1.4.29"
+    "mongodb": "^1.4.29",
+    "mongoose": "^3.8.22"
   }
 }

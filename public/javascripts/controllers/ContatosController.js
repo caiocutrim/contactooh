@@ -10,10 +10,7 @@ angular.module('contatooh').controller('ContatosController',
 		$scope.total = 0;
 		$scope.filtro = '';
 		$scope.mensagem = {texto:''};
-		$scope.incrementa = function(){
-			$scope.total ++;
-		};
-
+		
 		// Funcao responsavel por enviar requisições ao servidor
 		// expresss utilizando os requisitos do tipo REST.
 		// tal funcao eh relevantemente alimentada pelos REST-ends

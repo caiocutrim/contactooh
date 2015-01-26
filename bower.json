@@ -20,6 +20,6 @@
     "normalize-stylus": "*",
     "angular-route": "*",
     "bootstrap": "*",
-    "angular-resource": "*"
+    "angular-resource": "1.3"
   }
 }
