@@ -1,70 +1,64 @@
-/**
- * configuracao inicial do automatizador de tarefas, o grunt
- * @type {Object}
- */
+// contatooh/Gruntfile.js
 module.exports = function(grunt){
-	var css = "public/stylesheets/css/*"
-	,	less  = 
-	[	"public/stylesheets/less/*.less"
-	,	"public/libs/less/*"
-	]
-	, app   = 
-	[	"app/models/*"
-	,	"app/views/*"
-	,	"app/controllers/*"
-	,	"app/routes/*"
-	,	"app/*"
-	,	"public/*"
-	,	"public/partials/*"
-	,	"public/javascripts/controllers/*"
-	,	"public/javascripts/services/*"
-	]
-	;
-	grunt.initConfig
-	({
-		nodemon:
-		{
-			dev:
-			{
-				script:"server.js"
+	grunt.initConfig(
+	{ copy:
+		{ project :
+			{ expand : true
+			,	cwd :"."
+			, src :
+					['**'
+					, "!Gruntfile.js"
+					, "!package.json"
+					, "!bower.json"
+					]
+			, dest:"dist"	
 			}
 		}
-	,	less:
-		{
-			development	: 
-			{
-				files:
-				{
-					"public/stylesheets/css/styles.css":"public/stylesheets/less/style.less"
-				}
-			}		
-		}			
-	,	watch:
-		{
-			all:
-			{
-				files : ['*',css,less,app]
-			,	options : { livereload : true }
+	,	clean :{	dist : { src:'dist' } }
+	, usemin : { html : 'dist/app/views/**/*.ejs' }
+	, useminPrepare :
+		{ options : 
+			{ root : 'dist/public/'
+			,	dest : 'dist/public/'		
 			}
-		,	css : 
-			{
-				files: [less,css]
-			,	tasks: ['less']
-			, options : { livereload:true }
-			}
+		,	html : "dist/app/views/**/*.ejs"	
 		}
-	,	concurrent : 
-		{
-			development : ['nodemon','watch']
-		,	options : 
-			{
-				logConcurrentOutput: true
-			}	
-		}	
+	, ngAnnotate:
+		{	scripts:
+			{	expand: true
+			, src: ['dist/public/javascripts/**/*.js']	
+			}
+		}					
 	});
+	grunt.registerTask
+	(	'default'
+		, ['dist'
+		, 'minifica'
+		]
+	);
+	grunt.registerTask
+	(	'dist'
+		, ['clean'
+		, 'copy'
+		]
+	);
+	grunt.registerTask
+	( 'minifica'
+	, [	'useminPrepare'
+		,	'ngAnnotate'
+		,	'concat'
+		,	'uglify'
+		,	'cssmin'
+		,	'usemin'
+		]
+	);
+	// loading tasks
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-ng-annotate');
+	grunt.loadNpmTasks('grunt-usemin');
 
-
-	require('load-grunt-tasks')(grunt);
-	
-	grunt.registerTask('default',['concurrent:development']);
-};
+}

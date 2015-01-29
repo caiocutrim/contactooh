@@ -1,14 +1,37 @@
 <!-- app/views/index.ejs -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="contatooh">
 <head>
-	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Bem vindo</title>
+	<meta charset="UTF-8">
+	<meta author="Caio Cutrim">
+	<title>Home</title>
+	<!-- build:css stylesheets/css/index.min.css -->
+	<link rel="stylesheet" href="stylesheets/css/styles.css">
+	<!-- endbuild -->
 </head>
-<body>
-	<header>
-		<h1>Bem vindo ao <%=nome %></h1>
-	</header>
+<body class="container">
+<!-- Usuario -->
+	<div class="text-center">
+		Logado como:<span id="usuario-logado">
+			<%=usuarioLogado  %>
+		</span>
+			 <a href="/logout"><span class="glyphicon glyphicon-log-out"></span>logout</a>
+	</div>
+<!-- ./Usuario -->
+	<ng-view></ng-view>					
+
+	<!-- build:js javascripts/main.min.js -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+	<script src="libs/angular-resource/angular-resource.min.js"></script>
+	<script src="javascripts/main.js"></script>
+	<script src="javascripts/controllers/ContatosController.js"></script>
+	<script src="javascripts/controllers/ContatoController.js"></script>
+	<script src="javascripts/services/ContatoServices.js"></script>
+	<script src="javascripts/services/InterceptorServices.js"></script>
+	<!-- endbuild -->
+
 </body>
 </html>
+<!-- ./app/views/index.ejs -->
