@@ -2,96 +2,89 @@
 1 verbose cli [ '/usr/local/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   '-g',
-1 verbose cli   'protactor@1.5' ]
+1 verbose cli   'casperjs@1.0',
+1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose cache add [ 'protactor@1.5', null ]
-5 verbose cache add name=undefined spec="protactor@1.5" args=["protactor@1.5",null]
-6 verbose parsed url { protocol: null,
-6 verbose parsed url   slashes: null,
-6 verbose parsed url   auth: null,
-6 verbose parsed url   host: null,
-6 verbose parsed url   port: null,
-6 verbose parsed url   hostname: null,
-6 verbose parsed url   hash: null,
-6 verbose parsed url   search: null,
-6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'protactor@1.5',
-6 verbose parsed url   path: 'protactor@1.5',
-6 verbose parsed url   href: 'protactor@1.5' }
-7 verbose cache add name="protactor" spec="1.5" args=["protactor","1.5"]
-8 verbose parsed url { protocol: null,
-8 verbose parsed url   slashes: null,
-8 verbose parsed url   auth: null,
-8 verbose parsed url   host: null,
-8 verbose parsed url   port: null,
-8 verbose parsed url   hostname: null,
-8 verbose parsed url   hash: null,
-8 verbose parsed url   search: null,
-8 verbose parsed url   query: null,
-8 verbose parsed url   pathname: '1.5',
-8 verbose parsed url   path: '1.5',
-8 verbose parsed url   href: '1.5' }
-9 verbose addNamed [ 'protactor', '1.5' ]
-10 verbose addNamed [ null, '>=1.5.0-0 <1.6.0-0' ]
-11 silly lockFile f0423e49-protactor-1-5 protactor@1.5
-12 verbose lock protactor@1.5 /home/caio/.npm/f0423e49-protactor-1-5.lock
-13 silly addNameRange { name: 'protactor',
-13 silly addNameRange   range: '>=1.5.0-0 <1.6.0-0',
-13 silly addNameRange   hasData: false }
-14 verbose request where is /protactor
-15 verbose request registry https://registry.npmjs.org/
-16 verbose request id 4b7ff4f34b2b49bc
-17 verbose url raw /protactor
-18 verbose url resolving [ 'https://registry.npmjs.org/', './protactor' ]
-19 verbose url resolved https://registry.npmjs.org/protactor
-20 verbose request where is https://registry.npmjs.org/protactor
-21 info trying registry request attempt 1 at 00:29:57
-22 http GET https://registry.npmjs.org/protactor
-23 http 404 https://registry.npmjs.org/protactor
-24 verbose headers { date: 'Thu, 29 Jan 2015 03:29:58 GMT',
-24 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-24 verbose headers   'content-type': 'application/json',
-24 verbose headers   'cache-control': 'max-age=0',
-24 verbose headers   'content-length': '52',
-24 verbose headers   'accept-ranges': 'bytes',
-24 verbose headers   via: '1.1 varnish',
-24 verbose headers   age: '0',
-24 verbose headers   'x-served-by': 'cache-iad2143-IAD',
-24 verbose headers   'x-cache': 'MISS',
-24 verbose headers   'x-cache-hits': '0',
-24 verbose headers   'x-timer': 'S1422502198.081239,VS0,VE11',
-24 verbose headers   'keep-alive': 'timeout=10, max=50',
-24 verbose headers   connection: 'Keep-Alive' }
-25 silly registry.get cb [ 404,
-25 silly registry.get   { date: 'Thu, 29 Jan 2015 03:29:58 GMT',
-25 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-25 silly registry.get     'content-type': 'application/json',
-25 silly registry.get     'cache-control': 'max-age=0',
-25 silly registry.get     'content-length': '52',
-25 silly registry.get     'accept-ranges': 'bytes',
-25 silly registry.get     via: '1.1 varnish',
-25 silly registry.get     age: '0',
-25 silly registry.get     'x-served-by': 'cache-iad2143-IAD',
-25 silly registry.get     'x-cache': 'MISS',
-25 silly registry.get     'x-cache-hits': '0',
-25 silly registry.get     'x-timer': 'S1422502198.081239,VS0,VE11',
-25 silly registry.get     'keep-alive': 'timeout=10, max=50',
-25 silly registry.get     connection: 'Keep-Alive' } ]
-26 silly lockFile f0423e49-protactor-1-5 protactor@1.5
-27 silly lockFile f0423e49-protactor-1-5 protactor@1.5
-28 error 404 404 Not Found: protactor
-28 error 404
-28 error 404 'protactor' is not in the npm registry.
-28 error 404 You should bug the author to publish it
-28 error 404
-28 error 404 Note that you can also install from a
-28 error 404 tarball, folder, or http url, or git url.
-29 error System Linux 3.13.0-44-generic
-30 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "protactor@1.5"
-31 error cwd /home/caio/Projetos/contatooh
-32 error node -v v0.10.35
-33 error npm -v 1.4.28
-34 error code E404
-35 verbose exit [ 1, true ]
+4 warn package.json contatooh@1.0.0 No repository field.
+5 warn package.json contatooh@1.0.0 No README data
+6 warn package.json karma-chrome-launcher@0.1.7 No README data
+7 warn package.json mongo-sanitize@1.0.0 No repository field.
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'casperjs@1.0', null ]
+10 verbose cache add name=undefined spec="casperjs@1.0" args=["casperjs@1.0",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'casperjs@1.0',
+11 verbose parsed url   path: 'casperjs@1.0',
+11 verbose parsed url   href: 'casperjs@1.0' }
+12 verbose cache add name="casperjs" spec="1.0" args=["casperjs","1.0"]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '1.0',
+13 verbose parsed url   path: '1.0',
+13 verbose parsed url   href: '1.0' }
+14 verbose addNamed [ 'casperjs', '1.0' ]
+15 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+16 silly lockFile caab6f95-casperjs-1-0 casperjs@1.0
+17 verbose lock casperjs@1.0 /home/caio/.npm/caab6f95-casperjs-1-0.lock
+18 silly addNameRange { name: 'casperjs', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+19 verbose request where is /casperjs
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id 01878b6d6b995810
+22 verbose url raw /casperjs
+23 verbose url resolving [ 'https://registry.npmjs.org/', './casperjs' ]
+24 verbose url resolved https://registry.npmjs.org/casperjs
+25 verbose request where is https://registry.npmjs.org/casperjs
+26 info trying registry request attempt 1 at 21:04:04
+27 http GET https://registry.npmjs.org/casperjs
+28 http 200 https://registry.npmjs.org/casperjs
+29 silly registry.get cb [ 200,
+29 silly registry.get   { date: 'Fri, 30 Jan 2015 00:04:03 GMT',
+29 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly registry.get     etag: '"8BGR8KZ34H7FNWOXWET6CZX2K"',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'cache-control': 'max-age=60',
+29 silly registry.get     'content-length': '16310',
+29 silly registry.get     'accept-ranges': 'bytes',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     age: '0',
+29 silly registry.get     'x-served-by': 'cache-jfk1022-JFK',
+29 silly registry.get     'x-cache': 'HIT',
+29 silly registry.get     'x-cache-hits': '1',
+29 silly registry.get     'x-timer': 'S1422576243.804128,VS0,VE15',
+29 silly registry.get     vary: 'Accept',
+29 silly registry.get     'keep-alive': 'timeout=10, max=50',
+29 silly registry.get     connection: 'Keep-Alive' } ]
+30 silly addNameRange number 2 { name: 'casperjs', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+31 silly addNameRange versions [ 'casperjs', [ '1.1.0-beta2', '1.1.0-beta3' ] ]
+32 silly lockFile caab6f95-casperjs-1-0 casperjs@1.0
+33 silly lockFile caab6f95-casperjs-1-0 casperjs@1.0
+34 error notarget No compatible version found: casperjs@'>=1.0.0-0 <1.1.0-0'
+34 error notarget Valid install targets:
+34 error notarget ["1.1.0-beta2","1.1.0-beta3"]
+34 error notarget
+34 error notarget This is most likely not a problem with npm itself.
+34 error notarget In most cases you or one of your dependencies are requesting
+34 error notarget a package version that doesn't exist.
+35 error System Linux 3.13.0-44-generic
+36 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "casperjs@1.0" "--save-dev"
+37 error cwd /home/caio/Projetos/contatooh
+38 error node -v v0.10.35
+39 error npm -v 1.4.28
+40 error code ETARGET
+41 verbose exit [ 1, true ]

@@ -10,7 +10,7 @@ require('./config/database')('mongodb://localhost/contatooh');
 http
 	.createServer(app)
 	.listen(app.get('port'), function(){
-		console.log('Express server escutando na porta http://caio.dev:'+app.get('port'));
+		console.log('Express server escutando na porta http://localhost:'+app.get('port'));
 	})
 ;
 	

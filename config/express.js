@@ -27,18 +27,17 @@ module.exports = function (){
 		.use(passport.session()) // cria sessions
 		.use(helmet()) //middleware de seguranca da app
 		.disable('x-powered-by') //desabilita no header o type application utilizada
-		.use(helmet.hidePoweredBy({setTo:'Feito com a tua mae aquela vagabunda XD'}))
 		.use(helmet.xframe()) // protege contra ataque de clickjacking pelo iframe
 		.use(helmet.xssFilter()) // protege contra cross-site-scripting
 		.use(helmet.nosniff()) // protege contra ataque tipo mime types 
 	;
 	
-
 	load('models',{cwd:'app'})
 		.then('controllers')
 		.then('routes')
 		.into(app)
 	;	
+
 	app.get('*', function(req, res){
 		res.status(404).render('404');
 	});
