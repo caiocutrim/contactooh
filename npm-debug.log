@@ -2,89 +2,101 @@
 1 verbose cli [ '/usr/local/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'casperjs@1.0',
+1 verbose cli   'karma-phantomjs@0.1',
 1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 warn package.json contatooh@1.0.0 No repository field.
-5 warn package.json contatooh@1.0.0 No README data
-6 warn package.json karma-chrome-launcher@0.1.7 No README data
-7 warn package.json mongo-sanitize@1.0.0 No repository field.
-8 verbose readDependencies using package.json deps
-9 verbose cache add [ 'casperjs@1.0', null ]
-10 verbose cache add name=undefined spec="casperjs@1.0" args=["casperjs@1.0",null]
-11 verbose parsed url { protocol: null,
-11 verbose parsed url   slashes: null,
-11 verbose parsed url   auth: null,
-11 verbose parsed url   host: null,
-11 verbose parsed url   port: null,
-11 verbose parsed url   hostname: null,
-11 verbose parsed url   hash: null,
-11 verbose parsed url   search: null,
-11 verbose parsed url   query: null,
-11 verbose parsed url   pathname: 'casperjs@1.0',
-11 verbose parsed url   path: 'casperjs@1.0',
-11 verbose parsed url   href: 'casperjs@1.0' }
-12 verbose cache add name="casperjs" spec="1.0" args=["casperjs","1.0"]
-13 verbose parsed url { protocol: null,
-13 verbose parsed url   slashes: null,
-13 verbose parsed url   auth: null,
-13 verbose parsed url   host: null,
-13 verbose parsed url   port: null,
-13 verbose parsed url   hostname: null,
-13 verbose parsed url   hash: null,
-13 verbose parsed url   search: null,
-13 verbose parsed url   query: null,
-13 verbose parsed url   pathname: '1.0',
-13 verbose parsed url   path: '1.0',
-13 verbose parsed url   href: '1.0' }
-14 verbose addNamed [ 'casperjs', '1.0' ]
-15 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
-16 silly lockFile caab6f95-casperjs-1-0 casperjs@1.0
-17 verbose lock casperjs@1.0 /home/caio/.npm/caab6f95-casperjs-1-0.lock
-18 silly addNameRange { name: 'casperjs', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
-19 verbose request where is /casperjs
-20 verbose request registry https://registry.npmjs.org/
-21 verbose request id 01878b6d6b995810
-22 verbose url raw /casperjs
-23 verbose url resolving [ 'https://registry.npmjs.org/', './casperjs' ]
-24 verbose url resolved https://registry.npmjs.org/casperjs
-25 verbose request where is https://registry.npmjs.org/casperjs
-26 info trying registry request attempt 1 at 21:04:04
-27 http GET https://registry.npmjs.org/casperjs
-28 http 200 https://registry.npmjs.org/casperjs
-29 silly registry.get cb [ 200,
-29 silly registry.get   { date: 'Fri, 30 Jan 2015 00:04:03 GMT',
+5 warn package.json karma-chrome-launcher@0.1.7 No README data
+6 warn package.json mongo-sanitize@1.0.0 No repository field.
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'karma-phantomjs@0.1', null ]
+9 verbose cache add name=undefined spec="karma-phantomjs@0.1" args=["karma-phantomjs@0.1",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'karma-phantomjs@0.1',
+10 verbose parsed url   path: 'karma-phantomjs@0.1',
+10 verbose parsed url   href: 'karma-phantomjs@0.1' }
+11 verbose cache add name="karma-phantomjs" spec="0.1" args=["karma-phantomjs","0.1"]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: '0.1',
+12 verbose parsed url   path: '0.1',
+12 verbose parsed url   href: '0.1' }
+13 verbose addNamed [ 'karma-phantomjs', '0.1' ]
+14 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+15 silly lockFile d7e10cd0-karma-phantomjs-0-1 karma-phantomjs@0.1
+16 verbose lock karma-phantomjs@0.1 /home/caio/.npm/d7e10cd0-karma-phantomjs-0-1.lock
+17 silly addNameRange { name: 'karma-phantomjs',
+17 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+17 silly addNameRange   hasData: false }
+18 verbose request where is /karma-phantomjs
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id 4f75a053857d9be4
+21 verbose url raw /karma-phantomjs
+22 verbose url resolving [ 'https://registry.npmjs.org/', './karma-phantomjs' ]
+23 verbose url resolved https://registry.npmjs.org/karma-phantomjs
+24 verbose request where is https://registry.npmjs.org/karma-phantomjs
+25 info trying registry request attempt 1 at 11:53:48
+26 http GET https://registry.npmjs.org/karma-phantomjs
+27 http 404 https://registry.npmjs.org/karma-phantomjs
+28 verbose headers { date: 'Sun, 01 Feb 2015 14:53:47 GMT',
+28 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '52',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   'x-served-by': 'cache-atl6235-ATL',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1422802427.256425,VS0,VE112',
+28 verbose headers   'keep-alive': 'timeout=10, max=50',
+28 verbose headers   connection: 'Keep-Alive' }
+29 silly registry.get cb [ 404,
+29 silly registry.get   { date: 'Sun, 01 Feb 2015 14:53:47 GMT',
 29 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-29 silly registry.get     etag: '"8BGR8KZ34H7FNWOXWET6CZX2K"',
 29 silly registry.get     'content-type': 'application/json',
-29 silly registry.get     'cache-control': 'max-age=60',
-29 silly registry.get     'content-length': '16310',
+29 silly registry.get     'cache-control': 'max-age=0',
+29 silly registry.get     'content-length': '52',
 29 silly registry.get     'accept-ranges': 'bytes',
 29 silly registry.get     via: '1.1 varnish',
 29 silly registry.get     age: '0',
-29 silly registry.get     'x-served-by': 'cache-jfk1022-JFK',
-29 silly registry.get     'x-cache': 'HIT',
-29 silly registry.get     'x-cache-hits': '1',
-29 silly registry.get     'x-timer': 'S1422576243.804128,VS0,VE15',
-29 silly registry.get     vary: 'Accept',
+29 silly registry.get     'x-served-by': 'cache-atl6235-ATL',
+29 silly registry.get     'x-cache': 'MISS',
+29 silly registry.get     'x-cache-hits': '0',
+29 silly registry.get     'x-timer': 'S1422802427.256425,VS0,VE112',
 29 silly registry.get     'keep-alive': 'timeout=10, max=50',
 29 silly registry.get     connection: 'Keep-Alive' } ]
-30 silly addNameRange number 2 { name: 'casperjs', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
-31 silly addNameRange versions [ 'casperjs', [ '1.1.0-beta2', '1.1.0-beta3' ] ]
-32 silly lockFile caab6f95-casperjs-1-0 casperjs@1.0
-33 silly lockFile caab6f95-casperjs-1-0 casperjs@1.0
-34 error notarget No compatible version found: casperjs@'>=1.0.0-0 <1.1.0-0'
-34 error notarget Valid install targets:
-34 error notarget ["1.1.0-beta2","1.1.0-beta3"]
-34 error notarget
-34 error notarget This is most likely not a problem with npm itself.
-34 error notarget In most cases you or one of your dependencies are requesting
-34 error notarget a package version that doesn't exist.
-35 error System Linux 3.13.0-44-generic
-36 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "casperjs@1.0" "--save-dev"
-37 error cwd /home/caio/Projetos/contatooh
-38 error node -v v0.10.35
-39 error npm -v 1.4.28
-40 error code ETARGET
-41 verbose exit [ 1, true ]
+30 silly lockFile d7e10cd0-karma-phantomjs-0-1 karma-phantomjs@0.1
+31 silly lockFile d7e10cd0-karma-phantomjs-0-1 karma-phantomjs@0.1
+32 error 404 404 Not Found: karma-phantomjs
+32 error 404
+32 error 404 'karma-phantomjs' is not in the npm registry.
+32 error 404 You should bug the author to publish it
+32 error 404 It was specified as a dependency of 'contatooh'
+32 error 404
+32 error 404 Note that you can also install from a
+32 error 404 tarball, folder, or http url, or git url.
+33 error System Linux 3.13.0-44-generic
+34 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "karma-phantomjs@0.1" "--save-dev"
+35 error cwd /home/caio/Projetos/contatooh
+36 error node -v v0.10.35
+37 error npm -v 1.4.28
+38 error code E404
+39 verbose exit [ 1, true ]
