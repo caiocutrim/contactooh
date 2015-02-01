@@ -1,14 +1,14 @@
 describe('ContatoController', function()
-{	
-	var $scope, $httpBackend; 
+{
+	var $scope, $httpBackend;
 	beforeEach(function()
 	{
 		module('contatooh');
-		
+
 		inject(function($injector, _$httpBackend_)
 		{
 			$scope = $injector.get('$rootScope').$new();
-			
+
 			$httpBackend = _$httpBackend_;
 
 			$httpBackend.when('GET', '/contatos/1')
@@ -34,14 +34,14 @@ describe('ContatoController', function()
 		,	inject(function($controller)
 			{
 				$controller('ContatoController'
-				, { $routeParams:{ contatoId:1 }
+				, { $routeParams:{ contatoId:1}
 					,	'$scope': $scope
 					}
 				);
-				
+
 				$httpBackend.flush();
-				
-				expect($scope.contato._id).toBeDefined();	
+
+				expect($scope.contato._id).toBeDefined();
 
 			})
 		);
