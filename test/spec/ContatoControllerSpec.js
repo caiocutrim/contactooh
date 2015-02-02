@@ -1,6 +1,7 @@
 describe('ContatoController', function()
 {
 	var $scope, $httpBackend;
+
 	beforeEach(function()
 	{
 		module('contatooh');
@@ -11,16 +12,9 @@ describe('ContatoController', function()
 
 			$httpBackend = _$httpBackend_;
 
-			$httpBackend.when('GET', '/contatos/1')
-				.respond({_id:'1'})
-			;
-
-			$httpBackend.when('GET', '/contatos')
-				.respond([{}])
-			;
-
+			$httpBackend.when('GET', '/contatos/1').respond({_id:'1'});
+			$httpBackend.when('GET', '/contatos').respond([{}]);
 		});
-
 	});
 
 	it("Deve criar um contato vazio, quando nenhum parametro de rota for passado"
