@@ -1,9 +1,8 @@
 {
-  "na:me": "contatooh",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+  "name": "contatooh",
+  "version": "0.0.0",
+  "authors": [
+    "Caio Cutrim <kaiocoutrim@gmail.com>"
   ],
   "dependencies": {
     "angular": "1.3",
