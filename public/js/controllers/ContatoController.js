@@ -20,18 +20,19 @@ angular.module('contatooh').controller('ContatoController',
 		{
 			$scope.contato = new Contato();
 		}
-		
+
 		// salvar contato
-		$scope.salva = function () 
+		$scope.salva = function ()
 		{
-			$scope.contato
-			.$save()
+			$scope.contato.$save()
 				.then(function()
 				{
 					$scope.mensagem	=	{texto:'Salvo com sucesso!'}
 
 					// limpa o formulario
 					$scope.contato = new Contato();
+					// ativa o focu do #botao-voltar
+					$scope.$broadcast('contatoSalvo');
 				})
 				.catch (function(erro)
 				{

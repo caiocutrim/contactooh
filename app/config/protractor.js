@@ -1,14 +1,15 @@
 exports.config =
 {
-	specs: ['../test/e2e/**/*.js'],
+	specs: ['../../test/e2e/**/*.js'],
 	onPrepare: function()
 	{
+		var config = require('./config')();
 		browser.driver.get('http://caio.dev:3000/#/auth');
 		browser.driver.findElement(by.id('entrar')).click();
 		browser.driver.findElement(by.id('login_field'))
-			.sendKeys('blabla');
+			.sendKeys(config.seleniumUser);
 		browser.driver.findElement(by.id('password'))
-			.sendKeys('blabla');
+			.sendKeys(config.seleniumUserPassword);
 		browser.driver.findElement(by.name('commit')).click();
 	}
 };

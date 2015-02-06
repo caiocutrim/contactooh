@@ -1,15 +1,5 @@
 {
-  "name": "contatooh",
-  "version": "0.0.0",
-  "authors": [
-    "Caio Cutrim <kaiocoutrim@gmail.com>"
-  ],
-  "description": "front-end dependencies of the open-source project",
-  "license": "MIT",
-  "private": true,
-  "homepage": "http://caiocutrim.com.br",
-  "ignore": [
-    "**/.*",
+  "na:me": "contatooh",
     "node_modules",
     "bower_components",
     "test",

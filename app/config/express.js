@@ -15,7 +15,7 @@ module.exports = function (){
 		.set('views','./app/views') // o diretorio de views
 		.use(express.static('./public')) //define o diretorio de arquivos acessiveis ao usuário
 		.use(bodyParser.urlencoded({extended:true})) //qs :true
-		.use(bodyParser.json())//permitindo o uso de json como trafego de dados 
+		.use(bodyParser.json())//permitindo o uso de json como trafego de dados
 		.use(require('method-override')())//uso do PUT e DELETE http REST - protocol
 		.use(cookieParser()) //usa o middleware de cookies para realizar o parser do header populando req.cookies e armazena o id da sessao
 		.use(session( //define a session para teste
@@ -29,14 +29,14 @@ module.exports = function (){
 		.disable('x-powered-by') //desabilita no header o type application utilizada
 		.use(helmet.xframe()) // protege contra ataque de clickjacking pelo iframe
 		.use(helmet.xssFilter()) // protege contra cross-site-scripting
-		.use(helmet.nosniff()) // protege contra ataque tipo mime types 
+		.use(helmet.nosniff()) // protege contra ataque tipo mime types
 	;
-	
+
 	load('models',{cwd:'app'})
 		.then('controllers')
 		.then('routes')
 		.into(app)
-	;	
+	;
 
 	app.get('*', function(req, res){
 		res.status(404).render('404');
