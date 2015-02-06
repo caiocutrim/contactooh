@@ -1,9 +1,10 @@
 var http = 	require ('http')
-	,	app  =	require('./app/config/express')(app)
-	,	config = require('./app/config/config');
+	,	app  =	require('./config/express')(app)
+	,	config = require('./app/config/config')();
 ;
-require('./app/config/passport')();
-require('./app/config/database')('mongodb://localhost/contatooh');
+require('./config/passport')();
+require('./config/database')(config.db);
+
 /**
  * Aqui crio um servidor http para
  * alimentar a aplicação
