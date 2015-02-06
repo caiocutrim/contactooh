@@ -11,24 +11,24 @@ module.exports = function(grunt){
 					, "!package.json"
 					, "!bower.json"
 					]
-			, dest:"dist"	
+			, dest:"dist"
 			}
 		}
 	,	clean :{	dist : { src:'dist' } }
 	, usemin : { html : 'dist/app/views/**/*.ejs' }
 	, useminPrepare :
-		{ options : 
+		{ options :
 			{ root : 'dist/public/'
-			,	dest : 'dist/public/'		
+			,	dest : 'dist/public/'
 			}
-		,	html : "dist/app/views/**/*.ejs"	
+		,	html : "dist/app/views/**/*.ejs"
 		}
 	, ngAnnotate:
 		{	scripts:
 			{	expand: true
-			, src: ['dist/public/javascripts/**/*.js']	
+			, src: ['dist/public/js/**/*.js']
 			}
-		}					
+		}
 	});
 	grunt.registerTask
 	(	'default'
