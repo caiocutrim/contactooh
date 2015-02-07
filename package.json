@@ -1,5 +1,5 @@
 {
-  "name": "contatooh",
+  "name": "contactooh",
   "version": "1.0.0",
   "description": "A contact list with nodejs, angular and mongodb",
   "main": "server.js",
