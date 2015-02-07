@@ -1,9 +1,16 @@
+var config = require('../app/config/config.js')();
 exports.config =
-{
-	specs: ['../test/e2e/**/*.js'],
+{	sauceUser:config.sauceUser
+,	sauceKey:config.sauceKey
+, capabilities:
+{	'name':config.sauceTestName
+,	'browseName': 'chrome'
+,	'tunnel-identifier':config.travisJobNumber
+,	'build':config.travisBuild
+}
+,	specs: ['../test/e2e/**/*.js']
 	onPrepare: function()
 	{
-		var config = require('../app/config/config.js')();
 		browser.driver.get('http://caio.dev:3000/#/auth');
 		browser.driver.findElement(by.id('entrar')).click();
 		browser.driver.findElement(by.id('login_field'))
