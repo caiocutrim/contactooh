@@ -4,7 +4,7 @@ exports.config =
 ,	sauceKey:config.sauceKey
 , capabilities:
 {	'name':config.sauceTestName
-,	'browserName': 'chrome'
+,	'browserName': 'firefox'
 ,	'tunnel-identifier':config.travisJobNumber
 ,	'build':config.travisBuild
 }
