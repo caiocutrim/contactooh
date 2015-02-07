@@ -9,7 +9,7 @@ exports.config =
 ,	'build':config.travisBuild
 }
 ,	specs: ['../test/e2e/**/*.js']
-	onPrepare: function()
+,	onPrepare: function()
 	{
 		browser.driver.get('http://caio.dev:3000/#/auth');
 		browser.driver.findElement(by.id('entrar')).click();
