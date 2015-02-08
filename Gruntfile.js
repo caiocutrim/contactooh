@@ -1,21 +1,8 @@
 // contatooh/Gruntfile.js
 module.exports = function(grunt){
-	grunt.initConfig(
-	{ copy:
-		{ project :
-			{ expand : true
-			,	cwd :"."
-			, src :
-					['**'
-					, "!Gruntfile.js"
-					, "!package.json"
-					, "!bower.json"
-					]
-			, dest:"dist"
-			}
-		}
-	,	clean :{	dist : { src:'dist' } }
-	, usemin : { html : 'dist/app/views/**/*.ejs' }
+	grunt.initConfig
+	(
+	{ usemin : { html : 'dist/app/views/**/*.ejs' }
 	, useminPrepare :
 		{ options :
 			{ root : 'dist/public/'
@@ -29,19 +16,9 @@ module.exports = function(grunt){
 			, src: ['dist/public/js/**/*.js']
 			}
 		}
-	});
-	grunt.registerTask
-	(	'default'
-		, ['dist'
-		, 'minifica'
-		]
+	}
 	);
-	grunt.registerTask
-	(	'dist'
-		, ['clean'
-		, 'copy'
-		]
-	);
+
 	grunt.registerTask
 	( 'minifica'
 	, [	'useminPrepare'
@@ -55,8 +32,6 @@ module.exports = function(grunt){
 	// loading tasks
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-ng-annotate');
 	grunt.loadNpmTasks('grunt-usemin');

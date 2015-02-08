@@ -8,7 +8,7 @@ var contatoPage = function()
 {
 	this.visitar = function()
 	{
-		browser.get('http://caio.dev:3000/#/contato');
+		browser.get('http://localhost:3000/#/contato');
 	};
 
 	this.digitarNome = function(nome)

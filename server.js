@@ -9,10 +9,8 @@ require('./config/database')(config.db);
  * Aqui crio um servidor http para
  * alimentar a aplicação
  */
-http
-	.createServer(app)
-	.listen(app.get('port')
+http.createServer(app).listen(config.port, config.address
   , function(){
-		  console.log('Express server escutando na porta http://localhost:'+app.get('port'));
+		  console.log('Express Http server '+'('+config.address+')'+' '+config.env+' na porta'+config.port);
 	 })
 ;

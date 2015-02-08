@@ -4,6 +4,7 @@
   "description": "A contact list with nodejs, angular and mongodb",
   "main": "server.js",
   "scripts": {
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Caio Cutrim",

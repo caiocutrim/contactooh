@@ -11,7 +11,7 @@ exports.config =
 ,	specs: ['../test/e2e/**/*.js']
 ,	onPrepare: function()
 	{
-		browser.driver.get('http://caio.dev:3000/#/auth');
+		browser.driver.get('http://localhost:3000/#/auth');
 		browser.driver.findElement(by.id('entrar')).click();
 		browser.driver.findElement(by.id('login_field'))
 			.sendKeys(config.seleniumUser);

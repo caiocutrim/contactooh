@@ -1,25 +1,40 @@
 language: node_js
 notifications:
-  - kaiocoutrim@gmail.com
+- kaiocoutrim@gmail.com
 node_js:
-  - 0.10.25
+- 0.10.25
 services:
-  - mongodb
+- mongodb
 env:
   global:
-    - NODE_ENV: test
+  - NODE_ENV: test
 addons:
   sauce_connect: true
 before_install:
-  - npm install -g bower@1.3.12
-  - npm install -g grunt-cli@0.1
-  - npm install -g karma-cli@0.0
-  - npm install -g protractor@1.5
-  - webdriver-manager update
-  - bower install
+- npm install -g bower@1.3.12
+- npm install -g grunt-cli@0.1
+- npm install -g karma-cli@0.0
+- npm install -g protractor@1.5
+- webdriver-manager update
+- bower install
+before_deploy:
+- git config --global user.email 'travis@travis-ci.com'
+- git config --global user.name 'Travis CI'
+- git checkout $TRAVIS_BRANCH
+- git add --all
+- git commit -am "Travis commit"
 before_script:
-  - node test/data.js
-  - grunt
-  - cd dist
+- node test/data.js
+- grunt minifica
+- cd dist
 script:
-  - karma start config/karma.config.js --single-run --browsers PhantomJS
+- karma start config/karma.config.js --single-run --browsers PhantomJS
+deploy:
+  provider: openshift
+  user: kaiocoutrim@gmail.com
+  password:
+    secure: HF5GaRzmh4EJwIUlxBjgI41GiP+F0l/X6dvVhhowe6g7gh9gQYLKinayNmn2LLNhUCQzSXm6TMb/KQg1ueUh5qXLoTm63w6M9uSA/SVn174h/JVeT4oIPOAPIEfWqxUKm3YfvYxQxiIaZjNdEW72hbimo86om+hZNXluRf1lWY4=
+  app: contactooh
+  domain: contactooh-maranhao.rhcloud.com
+  on:
+    repo: caiocutrim/contactooh

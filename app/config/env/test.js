@@ -1,7 +1,7 @@
 // app/config/test.js
 module.exports =
 { env:'test'
-,	db:'mongodb://localhost/contatooh-test'
+,	db:'mongodb://localhost/contactooh-test'
 , sauceTestName: 'Contatooh E2E Testing'
 , sauceUser: process.env.SAUCEUSERNAME
 , sauceKey: process.env.SAUCE_ACCESS_KEY
@@ -11,4 +11,7 @@ module.exports =
 , clientSecret: process.env.CLIENT_SECRET
 , seleniumUser: process.env.SELENIUM_USER
 , seleniumUserPassword: process.env.SELENIUM_USER_PASSWORD
+, port:3000
+, address:'localhost'
+, domain:'localhost'
 };

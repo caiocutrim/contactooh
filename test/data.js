@@ -4,7 +4,7 @@ var contatos =
 , { nome:"xyz2", email:"xyz2@gmail.com" }
 , { nome:"xyz3", email:"xyz3@gmail.com" }
 ];
-MongoClient.connect('mongodb://127.0.0.1:27017/contatooh_test',
+MongoClient.connect('mongodb://127.0.0.1:27017/contactooh_test',
   function(err, db)
   {
     if (err) throw err;
