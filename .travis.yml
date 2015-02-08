@@ -34,6 +34,6 @@ deploy:
   password:
     secure: HF5GaRzmh4EJwIUlxBjgI41GiP+F0l/X6dvVhhowe6g7gh9gQYLKinayNmn2LLNhUCQzSXm6TMb/KQg1ueUh5qXLoTm63w6M9uSA/SVn174h/JVeT4oIPOAPIEfWqxUKm3YfvYxQxiIaZjNdEW72hbimo86om+hZNXluRf1lWY4=
   app: contactooh
-  domain: contactooh-maranhao.rhcloud.com
+  domain: www.contactoohma.com.br
   on:
     repo: caiocutrim/contactooh
