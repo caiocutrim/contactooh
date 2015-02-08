@@ -30,10 +30,10 @@ before_deploy:
 - git commit -am "Travis commit"
 deploy:
   provider: openshift
-  user: kaiocoutrim@gmail.com
+  user: admin@kaiocoutrim@gmail.com
   password:
-    secure: HF5GaRzmh4EJwIUlxBjgI41GiP+F0l/X6dvVhhowe6g7gh9gQYLKinayNmn2LLNhUCQzSXm6TMb/KQg1ueUh5qXLoTm63w6M9uSA/SVn174h/JVeT4oIPOAPIEfWqxUKm3YfvYxQxiIaZjNdEW72hbimo86om+hZNXluRf1lWY4=
+    secure: IV49nwgj8F/P3C9MwSh0cgdwA7oLLfuFuz4RePAmmST/Ta7fi8Hz/1LI0+GAb43BdCiO3oEe1orB0GMCHrfCb9b26fRP4Tgb5YMUKbWJ6EW6Hv1IWmspoNbni7DRKSGcdY690Ykazo5iwbX4Q8Qmo3OKslK+x0eIzlURjN1ZLGs=
   app: contactooh
-  domain: www.contactoohma.com.br
+  domain: contactooh-maranhao.rhcloud.com
   on:
     repo: caiocutrim/contactooh
