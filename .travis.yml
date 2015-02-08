@@ -22,12 +22,18 @@ before_script:
 - grunt minifica
 script:
 - karma start config/karma.config.js --single-run --browsers PhantomJS
+before_deploy:
+- git config --global user.email 'travis@travis-ci.com'
+- git config --global user.name 'Travis CI'
+- git checkout $TRAVIS_BRANCH
+- git add --all
+- git commit -m "Travis commit"
 deploy:
   provider: openshift
   user: kaiocoutrim@gmail.com
   password:
     secure: Kc6iaIbBKMQKgKN7f7/wsi08EU1nD/WgyjQ4yPE3r8FPOOe5wXsCjb6W56pVTDNO7jGXKiETh6EZ3gX3e13s1Pi7KjS7GKTwSykS0psOUkPc2abeoimJsDK8G84k6l8ms+DWymlUbAEC2Uhj7wnIwnwxm8YETDhYkR49dDhs7BQ=
   app: contactooh
-  domain: https://contactooh-maranhao.rhcloud.com/
+  domain: "contactooh-maranhao.rhcloud.com"
   on:
     repo: caiocutrim/contactooh
