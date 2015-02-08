@@ -2,18 +2,18 @@
 module.exports = function(grunt){
 	grunt.initConfig
 	(
-	{ usemin : { html : 'dist/app/views/**/*.ejs' }
+	{ usemin : { html : 'app/views/**/*.ejs' }
 	, useminPrepare :
 		{ options :
-			{ root : 'dist/public/'
-			,	dest : 'dist/public/'
+			{ root : 'public/'
+			,	dest : 'public/'
 			}
-		,	html : "dist/app/views/**/*.ejs"
+		,	html : "app/views/**/*.ejs"
 		}
 	, ngAnnotate:
 		{	scripts:
 			{	expand: true
-			, src: ['dist/public/js/**/*.js']
+			, src: ['public/js/**/*.js']
 			}
 		}
 	}
