@@ -32,7 +32,7 @@ deploy:
   provider: openshift
   user: kaiocoutrim@gmail.com
   password:
-    secure: Kc6iaIbBKMQKgKN7f7/wsi08EU1nD/WgyjQ4yPE3r8FPOOe5wXsCjb6W56pVTDNO7jGXKiETh6EZ3gX3e13s1Pi7KjS7GKTwSykS0psOUkPc2abeoimJsDK8G84k6l8ms+DWymlUbAEC2Uhj7wnIwnwxm8YETDhYkR49dDhs7BQ=
+    secure: eFNXIQb7x05ixXhugscFHsrwIkZ80494W2GezlQKdPr2ApAPFCiLStQKmjsV6ttkdeYkWy3kmUV9D8cdjZAYIdVA0muG6KTFXmRLLM9sF2HJPGojOP4JAV28jId70JT5cTcr/TxUuGKGuqYKKuiaQpRaRSAvi8AcviQm2DbWFEU=
   app: contactooh
   domain: maranhao
   on:
