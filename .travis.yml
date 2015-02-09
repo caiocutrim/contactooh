@@ -18,7 +18,6 @@ before_install:
 - webdriver-manager update
 - bower install
 before_script:
-- node test/data.js
 - grunt minifica
 script:
 - karma start config/karma.config.js --single-run --browsers PhantomJS
@@ -34,6 +33,6 @@ deploy:
   password:
     secure: Kc6iaIbBKMQKgKN7f7/wsi08EU1nD/WgyjQ4yPE3r8FPOOe5wXsCjb6W56pVTDNO7jGXKiETh6EZ3gX3e13s1Pi7KjS7GKTwSykS0psOUkPc2abeoimJsDK8G84k6l8ms+DWymlUbAEC2Uhj7wnIwnwxm8YETDhYkR49dDhs7BQ=
   app: contactooh
-  domain: "contactooh-maranhao.rhcloud.com"
+  domain: maranhao
   on:
     repo: caiocutrim/contactooh
