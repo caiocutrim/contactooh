@@ -1,6 +1,6 @@
 
 angular
 	.module('contatooh')
-		.factory('Contato',	function($resource){
+		.factory('Contato',	["$resource", function($resource){
 			return $resource('/contatos/:id');
-		});
+		}]);

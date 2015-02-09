@@ -5,7 +5,7 @@
  * @return {[response]}
  */
 angular.module('contatooh').controller('ContatosController',
-	function(Contato,$scope){
+	["Contato", "$scope", function(Contato,$scope){
 		$scope.contatos = [];
 		$scope.total = 0;
 		$scope.filtro = '';
@@ -40,5 +40,5 @@ angular.module('contatooh').controller('ContatosController',
 				}
 			);
 		};
-	}
+	}]
 ); //end controller
