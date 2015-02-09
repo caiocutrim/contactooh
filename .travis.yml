@@ -37,3 +37,4 @@ deploy:
   domain: maranhao
   on:
     repo: caiocutrim/contactooh
+  errorOnFail: true
