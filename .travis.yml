@@ -32,7 +32,7 @@ deploy:
   user: kaiocoutrim@gmail.com
   password:
     secure: eFNXIQb7x05ixXhugscFHsrwIkZ80494W2GezlQKdPr2ApAPFCiLStQKmjsV6ttkdeYkWy3kmUV9D8cdjZAYIdVA0muG6KTFXmRLLM9sF2HJPGojOP4JAV28jId70JT5cTcr/TxUuGKGuqYKKuiaQpRaRSAvi8AcviQm2DbWFEU=
-  app: contatooh
+  app: contactooh
   domain: maranhao
   on:
     repo: caiocutrim/contactooh
